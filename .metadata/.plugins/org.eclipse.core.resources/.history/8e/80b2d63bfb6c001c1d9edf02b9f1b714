@@ -1,0 +1,48 @@
+package basics;
+
+public class flowControl
+{
+
+	public flowControl()
+	{
+		int i =5;
+		boolean myBool= true;
+		if(myBool)
+		{
+			System.out.println("inside if");
+		}
+		else if(i>5)
+		{
+			
+		}
+		else
+		{
+			
+		}
+	
+		while(myBool)
+		{
+		
+			break;//ends loop
+		}
+		do
+		{
+			
+		}
+		while(myBool);
+		String[] names= {"jake","sarah","jose"};
+		for(int irr=0; irr<names.length;++irr)
+		{
+			System.out.println(names[irr]);
+			
+		}
+		//enhanced for loop runs each item in array or collection
+		for(String s: names)
+		{
+			System.out.println(s);
+		}
+		//switch
+		
+		
+	}
+}

@@ -1,0 +1,40 @@
+package atHomeAssignments;
+
+import java.io.PrintStream;
+
+public class driver 
+{
+	public static void main (String [] args)
+	{
+		int[] unsortNums= {1,0,5,6,3,2,3,7,9,8,4};
+		bubbleSort bubbles= new bubbleSort();
+		bubbles.bubbSort(unsortNums);
+		bubbles.printDisplay(unsortNums);
+		fibonacci fb = new fibonacci();
+		
+		
+		int[] fbOutput= new int[25];
+		System.out.println(" Starting Fib");
+		for (int i=0; i<fbOutput.length;i++)
+		{
+			
+			fbOutput[i]=fb.fib(i);
+			System.out.println(fbOutput[i]);
+			break;
+		}
+		
+	}
+	
+}
+ class fibonacci
+{
+	  int  fib(int n)
+	 {
+		 if(n<=1)
+		 {
+			 return n;
+		 }
+		 return fib(n-1)+fib(n-2);
+		 
+	 }
+}
